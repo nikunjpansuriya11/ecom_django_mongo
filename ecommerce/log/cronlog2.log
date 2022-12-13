@@ -1,0 +1,34 @@
+Traceback (most recent call last):
+  File "/media/nikunj/CAF28011F28003C3/ecom_django_mongo/ecommerce/manage.py", line 21, in <module>
+    main()
+  File "/media/nikunj/CAF28011F28003C3/ecom_django_mongo/ecommerce/manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "/media/nikunj/CAF28011F28003C3/ecom_django_mongo/venv/lib/python3.10/site-packages/django/core/management/__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "/media/nikunj/CAF28011F28003C3/ecom_django_mongo/venv/lib/python3.10/site-packages/django/core/management/__init__.py", line 395, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/media/nikunj/CAF28011F28003C3/ecom_django_mongo/venv/lib/python3.10/site-packages/django/core/management/base.py", line 328, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "/media/nikunj/CAF28011F28003C3/ecom_django_mongo/venv/lib/python3.10/site-packages/django/core/management/base.py", line 369, in execute
+    output = self.handle(*args, **options)
+  File "/media/nikunj/CAF28011F28003C3/ecom_django_mongo/ecommerce/core/management/commands/scrapper2.py", line 34, in handle
+    productname_text = str(productname_text_tag.text)
+AttributeError: 'NoneType' object has no attribute 'text'
+Traceback (most recent call last):
+  File "/media/nikunj/CAF28011F28003C3/ecom_django_mongo/ecommerce/manage.py", line 21, in <module>
+    main()
+  File "/media/nikunj/CAF28011F28003C3/ecom_django_mongo/ecommerce/manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "/media/nikunj/CAF28011F28003C3/ecom_django_mongo/venv/lib/python3.10/site-packages/django/core/management/__init__.py", line 401, in execute_from_command_line
+  File "/media/nikunj/CAF28011F28003C3/ecom_django_mongo/venv/lib/python3.10/site-packages/django/core/management/__init__.py", line 395, in execute
+  File "/media/nikunj/CAF28011F28003C3/ecom_django_mongo/venv/lib/python3.10/site-packages/django/core/management/base.py", line 328, in run_from_argv
+  File "/media/nikunj/CAF28011F28003C3/ecom_django_mongo/venv/lib/python3.10/site-packages/django/core/management/base.py", line 369, in execute
+  File "/media/nikunj/CAF28011F28003C3/ecom_django_mongo/ecommerce/core/management/commands/scrapper2.py", line 30, in handle
+    req = requests.get(product_url.product_url)
+  File "/media/nikunj/CAF28011F28003C3/ecom_django_mongo/venv/lib/python3.10/site-packages/requests/api.py", line 73, in get
+  File "/media/nikunj/CAF28011F28003C3/ecom_django_mongo/venv/lib/python3.10/site-packages/requests/api.py", line 59, in request
+  File "/media/nikunj/CAF28011F28003C3/ecom_django_mongo/venv/lib/python3.10/site-packages/requests/sessions.py", line 587, in request
+  File "/media/nikunj/CAF28011F28003C3/ecom_django_mongo/venv/lib/python3.10/site-packages/requests/sessions.py", line 701, in send
+  File "/media/nikunj/CAF28011F28003C3/ecom_django_mongo/venv/lib/python3.10/site-packages/requests/adapters.py", line 460, in send
+  File "/media/nikunj/CAF28011F28003C3/ecom_django_mongo/venv/lib/python3.10/site-packages/requests/adapters.py", line 263, in cert_verify
+OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /media/nikunj/CAF28011F28003C3/ecom_django_mongo/venv/lib/python3.10/site-packages/certifi/cacert.pem

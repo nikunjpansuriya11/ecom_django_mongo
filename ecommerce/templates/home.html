@@ -1,0 +1,48 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Home{% endblock %}
+{% block content %}
+		<div class="colorlib-intro">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h2 class="intro">It started with a simple idea: Create quality, well-designed products that I wanted myself.</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="colorlib-product">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6 text-center">
+						<div class="featured">
+							<a href="/men/" class="featured-img" style=" background-image: url({% static 'ecom_web/images/men.jpg' %}); "></a>
+							<div class="desc">
+								<h2><a href="/men/">Shop Men's Collection</a></h2>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 text-center">
+						<div class="featured">
+							<a href="/women/" class="featured-img" style=" background-image: url({% static 'ecom_web/images/women.jpg' %}); "></a>
+							<div class="desc">
+								<h2><a href="/women/">Shop Women's Collection</a></h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="colorlib-product">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<p><a href="/product/" class="btn btn-primary btn-lg">Shop All Products</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+{% endblock %}
