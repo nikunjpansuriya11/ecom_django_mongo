@@ -7,3 +7,5 @@ source ../venv/bin/activate
 python manage.py scrapper1
 
 # 52 14 * * * /bin/bash /media/nikunj/CAF28011F28003C3/ecom_django_mongo/ecommerce/task/task.sh >> /media/nikunj/CAF28011F28003C3/ecom_django_mongo/ecommerce/log/cronlog.log 2>&1
+# 52 14 * * * /bin/bash /media/nikunj/CAF28011F28003C3/ecom_django_mongo/ecommerce/task/task2.sh >> /media/nikunj/CAF28011F28003C3/ecom_django_mongo/ecommerce/log/cronlog1.log 2>&1
+# 52 14 * * * /bin/bash /media/nikunj/CAF28011F28003C3/ecom_django_mongo/ecommerce/task/task3.sh >> /media/nikunj/CAF28011F28003C3/ecom_django_mongo/ecommerce/log/cronlog2.log 2>&1
