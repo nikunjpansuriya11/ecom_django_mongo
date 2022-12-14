@@ -94,6 +94,7 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 #     }
 # }
 
+# ecommerce
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
@@ -209,7 +210,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 TWOFACTOR_API_KEY = '8376b6f7-7765-11ed-9158-0200cd936042'
 
 EMAIL_HOST_USER = 'nikunjpansuriya11@gmail.com'
-EMAIL_HOST_PASSWORD = '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' # Here
+EMAIL_HOST_PASSWORD = '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' # Here
 
 APPEND_SLASH=False
 

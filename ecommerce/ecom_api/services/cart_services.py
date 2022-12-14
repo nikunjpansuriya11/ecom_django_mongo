@@ -2,7 +2,10 @@ from ecom_api.models import  Product, Cart, Images, Sizes
 from ecom_api.serializers.product_serializer import AllProductSerializer
 
 def all_cart_product(user_id):
-    all_cart_data = Cart.objects.get(user = user_id)
+    if Cart.objects.filter(user = user_id).exists():
+        all_cart_data = Cart.objects.get(user = user_id)
+    else:
+        all_cart_data = None
     return all_cart_data
 
 def cart_data_serializer(cart_data):

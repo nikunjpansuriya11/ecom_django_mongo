@@ -341,9 +341,13 @@ def cart(request):
 
 		response = requests.request("DELETE", url, headers=headers, data=payload, files=files)
 		return redirect('cart')
-	
 	product_object = all_cart_product(request.user.user_id)
-	serialized_response = cart_data_serializer(product_object)	
-	return render(request, "cart.html", { "product_data" : serialized_response['Products']  } )
+	if product_object:
+		serialized_response = cart_data_serializer(product_object)	
+		product_data = serialized_response['Products']
+	else:
+		product_data = None
+
+	return render(request, "cart.html", { "product_data" : product_data  } )
 
 
